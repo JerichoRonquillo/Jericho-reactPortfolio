@@ -1,0 +1,748 @@
+
+#burgerButton {
+  background-color: black;
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+.custom-nav-items {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+}
+
+#aboutMe {
+  width: 100%;
+  height: 1024px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#aboutMe img {
+  border-radius: 50%;
+  width: 20%;
+  margin: 64px;
+}
+#aboutMe p {
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  font-size: xx-large;
+  margin: 0 50px;
+}
+
+#skills {
+  background: rgb(33,37,41);
+  width: 100%;
+  height: 1024px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#work {
+  background: linear-gradient(180deg, #3f9bb6 0%, #3e667e 100%);
+  width: 100%;
+  height: 1024px;
+}
+
+#contactMe {
+  background: rgb(68, 68, 68);
+  width: 100%;
+  height: 1024px;
+  display: flex;
+  flex-direction: row;
+}
+
+#langs {
+  text-align: center;
+}
+
+#stack {
+  border-left: solid black;
+  height: -moz-fit-content;
+  height: 75%;
+  margin-left: 2%;
+  padding-left: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stackCap {
+  font-size: 104px;
+}
+
+.stackWord {
+  font-size: 70px;
+  margin-bottom: 20%;
+}
+
+.langWord {
+  margin-bottom: 8%;
+  font-size: 70px;
+  width: 100%;
+}
+
+#last {
+  margin-bottom: 0%;
+}
+
+/*Bubbles*/
+
+.bubbles {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  font-family: "Roboto Mono", monospace;
+}
+
+.gifBubbleLeft:hover,
+.gifBubbleRight:hover {
+  cursor: pointer;
+}
+
+.gifBubbleLeft {
+  position: relative;
+  width: 57%;
+  height: 47%;
+  top: 6.5%;
+  background: hsla(0,0%,100%,.18);
+}
+
+#gifBubbleLeft .gitHubBubble {
+  width: 64px;
+  height: 64px;
+  position: relative;
+  top: -10%;
+  left: 8%;
+}
+
+#gifBubbleLeft .titleRoles {
+  position: relative;
+  top: -3%;
+  left: 28%;
+  width: 195px;
+  height: 179px;
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 115%;
+}
+
+#gifBubbleLeft .tech {
+  position: relative;
+  top: -16%;
+  left: -18%;
+  width: 286px;
+  height: 289px;
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 115%;
+}
+#gifBubbleLeft .tech > * {
+  padding: 4% 0;
+}
+
+.gifBubbleLeft::before,
+.gifBubbleRight::before {
+  content: "";
+  transition: 1s;
+  width: 100.05%;
+  height: 100.05%;
+  border-radius: inherit;
+  background: rgba(63, 155, 182, 0.6);
+  position: absolute;
+  opacity: 1;
+}
+.gifBubbleLeft::after,
+.gifBubbleRight::after {
+  content: "";
+  transition: 1s;
+  border-radius: inherit;
+  background: #c4c4c4;
+  position: absolute;
+  opacity: 1;
+  width: 15%;
+  height: 10%;
+  left: 63%;
+  top: 23%;
+}
+
+.gifBubbleRight {
+  position: relative;
+  width: 59%;
+  height: 47%;
+  top: 8%;
+  background: hsla(0,0%,100%,.18);
+}
+
+#gifBubbleRight .gitHubBubble {
+  width: 64px;
+  height: 64px;
+  position: relative;
+  top: -11%;
+  left: 6%;
+}
+
+#gifBubbleRight .gitHubBubble:hover,
+#gifBubbleLeft .gitHubBubble:hover {
+  cursor: pointer;
+}
+
+#gifBubbleRight .titleRoles {
+  position: relative;
+  left: -32%;
+  width: 224px;
+  height: 198px;
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#gifBubbleRight .tech {
+  width: 334px;
+  height: 316px;
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 112%;
+  position: relative;
+  top: -10%;
+}
+
+#gifBubbleRight .tech > * {
+  padding: 4% 0;
+}
+
+.workBubble {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contactMeForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 5%;
+  width: 100%;
+  background-color: rgb(33,37,41);
+}
+#contactMeForm input {
+  width: 100%;
+  height: 10%;
+  padding: 0 0.5%;
+  border: 0;
+}
+
+#contactMeForm textarea {
+  width: 100%;
+  height: 326px;
+  border: 0;
+}
+
+#contactMeForm input:focus,
+#contactMeForm textarea:focus {
+  background-color: #a4f6f0;
+}
+
+#contactMeHeader {
+  font-family: sans-serif;
+  display: flex;
+  align-items: baseline;
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  height: 192px;
+  font-size: 40px;
+  line-height: 359px;
+  justify-content: center;
+  padding-top: 13%;
+  flex-wrap: wrap;
+}
+#contactMeHeader span {
+  padding-right: 5%;
+}
+#contactMeHeader > * {
+  height: 100%;
+}
+
+.formLabels {
+  font-size: 20px;
+  line-height: 45px;
+  color: #ffffff;
+}
+
+.contactMeWords {
+  color: #ffffff;
+  font-size: 58px;
+  line-height: 45px;
+}
+
+/*Responsiveness*/
+@media screen and (max-width: 1440px) {
+  .gifBubbleLeft {
+    position: relative;
+    width: 50%;
+    height: 35%;
+    top: 6.5%;
+    background: rgba(255, 255, 255, 0.18);
+  }
+  .gifBubbleRight {
+    position: relative;
+    width: 50%;
+    height: 35%;
+    top: 8%;
+    background: rgba(255, 255, 255, 0.18);
+  }
+}
+@media screen and (max-width: 1280px) {
+  .gifBubbleLeft {
+    position: relative;
+    width: 59%;
+    height: 28%;
+    top: 3.5%;
+    background: rgba(255, 255, 255, 0.18);
+    left: -12%;
+  }
+  .gifBubbleRight {
+    position: relative;
+    width: 59%;
+    height: 28%;
+    top: 5%;
+    background: rgba(255, 255, 255, 0.18);
+    left: 5%;
+  }
+  #gifBubbleLeft .gitHubBubble {
+    width: 64px;
+    height: 64px;
+    position: relative;
+    top: -13%;
+    left: 4%;
+  }
+}
+@media screen and (max-width: 1018px) {
+  #langs {
+    text-align: center;
+    width: 50%;
+  }
+  .gifBubbleLeft {
+    position: relative;
+    width: 74%;
+    height: 29%;
+    top: 6.5%;
+    background: rgba(255, 255, 255, 0.18);
+  }
+  .gifBubbleRight {
+    position: relative;
+    width: 75%;
+    height: 29%;
+    top: 8%;
+    background: rgba(255, 255, 255, 0.18);
+  }
+  #contactMeHeader {
+    display: flex;
+    align-items: baseline;
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+    height: 192px;
+    font-size: 81px;
+    line-height: 45px;
+    justify-content: center;
+    padding-top: 16%;
+    flex-wrap: wrap;
+  }
+  #contactMeHeader > * {
+    height: 75%;
+  }
+  #gifBubbleLeft .gitHubBubble {
+    width: 64px;
+    height: 64px;
+    position: relative;
+    top: -28%;
+    left: 28%;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .langWord {
+    margin-bottom: 8%;
+    font-size: 49px;
+    width: 100%;
+    padding-right: 7%;
+  }
+  .stackWord {
+    font-size: 50px;
+  }
+  #stack {
+    border-left: solid black;
+    height: -moz-fit-content;
+    height: auto;
+    margin-left: 2%;
+    padding-left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #aboutMe img {
+    border-radius: 50%;
+    width: 50%;
+    margin: 64px;
+}
+  #aboutMe p {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    font-size: 30px;
+    margin: 0 50px;
+  }
+  #skills {
+    background: rgb(194, 192, 192);
+    width: 100%;
+    height: 1024px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #langs {
+    text-align: end;
+    width: 50%;
+    border-right: solid black;
+  }
+
+  .gifBubbleLeft {
+    position: relative;
+    width: 317px;
+    height: 313px;
+    top: 19.5%;
+    background: rgba(255, 255, 255, 0.18);
+  }
+  #gifBubbleLeft .titleRoles {
+    position: relative;
+    top: 16%;
+    left: 43%;
+    width: 195px;
+    height: 179px;
+    background: rgba(255, 255, 255, 0.45);
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 115%;
+  }
+  #gifBubbleLeft .tech {
+    position: relative;
+    top: -10%;
+    left: -38%;
+    width: 286px;
+    height: 289px;
+    background: rgba(255, 255, 255, 0.45);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 115%;
+  }
+  #gifBubbleLeft .gitHubBubble {
+    width: 64px;
+    height: 64px;
+    position: relative;
+    top: -13%;
+    left: 45%;
+  }
+  .gifBubbleRight {
+    position: relative;
+    width: 317px;
+    height: 313px;
+    top: 8%;
+    background: rgba(255, 255, 255, 0.18);
+  }
+  #gifBubbleRight .titleRoles {
+    position: relative;
+    left: 40%;
+    width: 224px;
+    height: 198px;
+    background: rgba(255, 255, 255, 0.45);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top: 7%;
+  }
+  #gifBubbleRight .gitHubBubble {
+    width: 64px;
+    height: 64px;
+    position: relative;
+    top: -22%;
+    left: -50%;
+  }
+
+  #gifBubbleRight .tech {
+    width: 286px;
+    height: 289px;
+    background: hsla(0, 0%, 100%, 0.45);
+    border-radius: 50%;
+    justify-content: center;
+    font-size: 112%;
+    position: relative;
+    top: -21%;
+    left: -39%;
+  }
+  .bubbles {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    font-family: "Roboto Mono", monospace;
+    flex-direction: column;
+    align-items: center;
+  }
+  #work {
+    background: linear-gradient(180deg, #3f9bb6 0%, #3e667e 100%);
+    width: 100%;
+    height: 1588px;
+  }
+  #contactMe {
+    background: linear-gradient(180deg, #3e667e 0%, #112945 100%);
+    width: 100%;
+    height: 1024px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #contactMeForm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 5%;
+    width: 200%;
+    margin-left: 20px;
+  }
+  .contactMeWords {
+    color: #ffffff;
+    font-size: 81px;
+    line-height: 45px;
+    padding-top: 21%;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .langWord {
+    margin-bottom: 8%;
+    font-size: 30px;
+    width: 100%;
+    padding-left: 2%;
+  }
+  .stackCap {
+    font-size: 75px;
+  }
+  .stackWord {
+    font-size: 39px;
+  }
+  #stack {
+    border-left: solid black;
+    height: -moz-fit-content;
+    height: auto;
+    margin-left: 2%;
+    padding-left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+  }
+  #gifBubbleLeft .gitHubBubble {
+    width: 64px;
+    height: 64px;
+    position: relative;
+    top: -24%;
+    left: 62%;
+  }
+  #gifBubbleRight .tech {
+    width: 286px;
+    height: 289px;
+    background: hsla(0, 0%, 100%, 0.45);
+    border-radius: 50%;
+    justify-content: center;
+    font-size: 112%;
+    position: relative;
+    top: -15%;
+    left: -39%;
+  }
+  #gifBubbleRight .gitHubBubble {
+    width: 64px;
+    height: 64px;
+    position: relative;
+    top: -16%;
+    left: -39%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #gifBubbleLeft .titleRoles {
+    position: relative;
+    top: 4%;
+    left: 43%;
+    width: 195px;
+    height: 179px;
+    background: rgba(255, 255, 255, 0.45);
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 115%;
+}
+  .gifBubbleLeft {
+    position: relative;
+    width: 317px;
+    height: 313px;
+    top: 6.5%;
+    background: rgba(255, 255, 255, 0.18);
+}
+  #aboutMe p {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    font-size: large;
+    margin: 0 50px;
+  }
+  .stackWord {
+    font-size: 28px;
+  }
+  .stackCap {
+    font-size: 54px;
+  }
+  #gifBubbleLeft .gitHubBubble {
+    width: 64px;
+    height: 64px;
+    position: relative;
+    top: -24%;
+    left: 79%;
+  }
+  .contactMeWords {
+    color: #ffffff;
+    font-size: 45px;
+    line-height: 45px;
+    padding-top: 21%;
+  }
+  #gifBubbleLeft .tech {
+    position: relative;
+    top: -9%;
+    left: -31%;
+    width: 286px;
+    height: 289px;
+    background: rgba(255, 255, 255, 0.45);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 115%;
+  }
+  #gifBubbleRight .titleRoles {
+    position: relative;
+    left: -26%;
+    width: 224px;
+    height: 198px;
+    background: rgba(255, 255, 255, 0.45);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top: -6%;
+  }
+  .gifBubbleRight {
+    position: relative;
+    width: 308px;
+    height: 302px;
+    top: -6%;
+    background: rgba(255, 255, 255, 0.18);
+  }
+  #gifBubbleRight .tech {
+    width: 286px;
+    height: 289px;
+    background: hsla(0, 0%, 100%, 0.45);
+    border-radius: 50%;
+    justify-content: center;
+    font-size: 112%;
+    position: relative;
+    top: -14%;
+    left: 5%;
+  }
+  #gifBubbleRight .gitHubBubble {
+    width: 64px;
+    height: 64px;
+    position: relative;
+    top: -30%;
+    left: 52%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .langWord {
+    margin-bottom: 8%;
+    font-size: 24px;
+    width: 100%;
+    padding-left: 2%;
+  }
+  .contactMeWords {
+    color: #ffffff;
+    font-size: 45px;
+    line-height: 45px;
+    padding-top: 21%;
+  }
+  #contactMeHeader {
+    display: flex;
+    align-items: baseline;
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+    height: 192px;
+    font-size: 70px;
+    line-height: 45px;
+    justify-content: center;
+    padding-top: 16%;
+    flex-wrap: wrap;
+  }
+  #gifBubbleLeft .gitHubBubble {
+    width: 64px;
+    height: 64px;
+    position: relative;
+    top: -21%;
+    left: 78%;
+  }
+}
+
+#Jericho {
+  color:white;
+}
